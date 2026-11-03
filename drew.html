@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            color: #253047;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            padding: 35px 25px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #334155, #6366f1);
+        }
+
+        .avatar {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+            border: 3px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #e0e7ff;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section h2 {
+            font-size: 19px;
+            color: #4338ca;
+            padding-bottom: 10px;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #e0e7ff;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .info-item {
+            padding: 15px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            overflow-wrap: anywhere;
+        }
+
+        .label {
+            display: block;
+            color: #64748b;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 7px;
+        }
+
+        .value {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .about {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #475569;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skills li {
+            padding: 9px 15px;
+            background: #eef2ff;
+            color: #4338ca;
+            font-size: 14px;
+            border-radius: 20px;
+            border: 1px solid #c7d2fe;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 18px;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 13px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            .content {
+                padding: 22px 18px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <!-- Edit your initials, name, and description here -->
+        <header class="header">
+            <div class="avatar" aria-hidden="true">YN</div>
+            <h1>Dale Andrew Antoque</h1>
+            <p>Industrial Engineering</p>
+        </header>
+
+        <div class="content">
+
+            <!-- Edit your personal information here -->
+            <section class="section">
+                <h2>Personal Information</h2>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="label">Your Name</span>
+                        <p class="value">Dale Andrew Antoque</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Age</span>
+                        <p class="value">18 years old</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Birthday</span>
+                        <p class="value">February 11, 2008</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Address</span>
+                        <p class="value">Calero, Liloan, Cebu</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Email Address</span>
+                        <p class="value">daleandrewsetenta@gmail.com.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Contact Number</span>
+                        <p class="value">09937039577</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Edit your school information here -->
+            <section class="section">
+                <h2>Educational Information</h2>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="label">School</span>
+                        <p class="value">Cebu Technological University </p>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Course</span>
+                        <p class="value">
+                            Bachelor of Science in Industrial Engineering
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Year and Section</span>
+                        <p class="value">First Year — 1B-NIGHT</p>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Student ID</span>
+                        <p class="value">2026-00001</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Edit this paragraph -->
+            <section class="section">
+                <h2>About Me</h2>
+
+                <p class="about">
+                    I am an Information Technology student who enjoys
+                    learning about programming, web design, and database
+                    management. I like creating simple projects and
+                    improving my skills through practice. My goal is to
+                    become a developer and build applications that help
+                    people with everyday tasks.
+                </p>
+            </section>
+
+            <!-- Add or remove skills -->
+            <section class="section">
+                <h2>Skills and Interests</h2>
+
+                <ul class="skills">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            Personal Information Page
+        </footer>
+
+    </main>
+</body>
+</html>
